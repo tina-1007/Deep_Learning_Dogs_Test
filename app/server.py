@@ -41,7 +41,7 @@ async def download_file(url, dest):
 
 async def setup_learner():
     model = models.resnet50(pretrained = False)
-    model.fc = nn.Linear(model.fc.in_features,10)
+    model.fc = nn.Linear(model.fc.in_features,3)
     model = model.to(device)
     model = nn.DataParallel(model)
     model.load_state_dict(torch.load(model_file_name,map_location='cpu'))
