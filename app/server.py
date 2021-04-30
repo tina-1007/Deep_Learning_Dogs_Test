@@ -22,8 +22,7 @@ from starlette.staticfiles import StaticFiles
 #set url
 model_file_name = './app/models/model.t7'
 
-classes = ["Pug", "Groenendael", "Kuvasz", "Basset", "Bernese Mountain", "Doberman",
-            "English Foxhound", "English Springer", "Eskimo", "Golden Retriever"]
+classes = ["Pug","French dog","Shar Pei"]
 path = Path(__file__).parent
 
 app = Starlette()
